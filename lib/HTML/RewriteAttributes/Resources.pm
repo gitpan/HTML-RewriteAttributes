@@ -5,7 +5,7 @@ use warnings;
 use base 'HTML::RewriteAttributes';
 use URI;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 my %rewritable_attrs = (
     bgsound => { src        => 1 },
@@ -109,7 +109,8 @@ sub _import {
 
     return '' if $self->{rewrite_inline_imports_seen}{$path}++;
 
-    my $content = $self->{rewrite_inline_css_cb}->($path);
+    my $content = "\n/* $path */\n"
+                . $self->{rewrite_inline_css_cb}->($path);
     return $self->_handle_imports($content, $path);
 }
 

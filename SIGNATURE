@@ -14,20 +14,21 @@ not run its Makefile.PL or Build.PL.
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA1
 
-SHA1 d2aae65ddf4d8954f167a2896dbe320d61454ae8 Changes
-SHA1 5394f62c7e4060d753055baca13d2493b1f6b848 MANIFEST
+SHA1 735d2bcc3c9bc31e6f2cbd36cdc68c3b2d0bb0ef Changes
+SHA1 7ae764ced7958a97da964e355bbf430304244405 MANIFEST
+SHA1 310a002cf2ce2c0da41c417475e52709ea6944ed META.yml
 SHA1 16f5c7623c96bc02f38d6cf98e505f4a6aa2a1c1 Makefile.PL
-SHA1 7e2cfa1b9efe0d502ee57717649c90ba4bd28ba9 inc/Module/Install.pm
-SHA1 6e1392d80a0f239eecd5664f7f21f922cedb9329 inc/Module/Install/Base.pm
-SHA1 f69417fe831d9cc22a78f00a617afadceade4d81 inc/Module/Install/Can.pm
-SHA1 c61d02895330310048bf388881b5e2e064031561 inc/Module/Install/Fetch.pm
-SHA1 54fcbed19232ec959bb17cfb4410599afc7f0779 inc/Module/Install/Makefile.pm
-SHA1 7d3be9b158e37b2b2c22084740099955623b1d56 inc/Module/Install/Metadata.pm
-SHA1 0a8b66180229ba2f9deaea1fedd0aacf7a7ace6b inc/Module/Install/Win32.pm
-SHA1 d3352eb33fe43a5f3ead513f645224fe34d73bc9 inc/Module/Install/WriteAll.pm
-SHA1 de747c549af226789bdfb74539ad7395f73af0c0 lib/HTML/RewriteAttributes.pm
-SHA1 feed4886c551a433fecff5152acf21ee09678834 lib/HTML/RewriteAttributes/Links.pm
-SHA1 af50d46063bc6f0ece3459792b0c35da5777d03a lib/HTML/RewriteAttributes/Resources.pm
+SHA1 f0577f8f88a6703e9bca2d10196cfd293f3d6f2f inc/Module/Install.pm
+SHA1 5d574849849860b8cf06035cc6f1a306c66cb326 inc/Module/Install/Base.pm
+SHA1 c30f50bc2a1542dff17f84a54d9316f3c3c6299e inc/Module/Install/Can.pm
+SHA1 9b618efcd783f6ed4bab84fa22b31886fcc38d57 inc/Module/Install/Fetch.pm
+SHA1 cd14c8de2a67b0f14df9bc20c27f3edabd359d1b inc/Module/Install/Makefile.pm
+SHA1 a2162aec678d21988fce47ab805cf01773196292 inc/Module/Install/Metadata.pm
+SHA1 4ae5d56e11e640bd9520634dde6d563926f6d98a inc/Module/Install/Win32.pm
+SHA1 587cc94b52b640fe2d4972253b6369aa951e2210 inc/Module/Install/WriteAll.pm
+SHA1 2312a1c67e0e412c37ec752a97c27b75c9aeaa0b lib/HTML/RewriteAttributes.pm
+SHA1 1d0d0ebada4e6ffe9bcd42e650d9faae9a1a9152 lib/HTML/RewriteAttributes/Links.pm
+SHA1 01c3b324bda48240595947f03e33af3508655ec4 lib/HTML/RewriteAttributes/Resources.pm
 SHA1 5d97ad6516b8aea70d9979934492c8cbe7e88409 t/000-synopsis.t
 SHA1 ee0edb567e91ef5fc3df0e1c0771776b229e2aa2 t/001-basic.t
 SHA1 7fb822373f163cdb0fb54bd2a9f55dabe36e025f t/002-resources.t
@@ -35,13 +36,13 @@ SHA1 3c749328abb70da542ca0e42602fb6456a9d9780 t/003-links.t
 SHA1 301b59c6176775286333388dc539d524f3ee1635 t/004-misc.t
 SHA1 3269dcbb500cb5d4905ed442c030fedac40bea34 t/005-links-code.t
 SHA1 c511d1917a9ea1e486e643193c8ca99e8522f11e t/010-resolvelink.t
-SHA1 6fc443b361c2ddc632d54e697600ec387545cdd5 t/020-inline-css.t
-SHA1 7a2d16926ce390270c6e287bb16019a2df7bf4ca t/021-import.t
-SHA1 047eedcb672b290b94358915e591a9c00e5a8dc5 t/022-import-off.t
+SHA1 7081e6317457364ef0dd20cdb63dfaea44132f70 t/020-inline-css.t
+SHA1 a901c2673f095455484bf8fe493768fe292e68fa t/021-import.t
+SHA1 33065c367ab56b3a7bcdd55afb920828f52086c3 t/022-import-off.t
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.7 (Darwin)
 
-iD8DBQFIIjKrsxfQtHhyRPoRAjD3AKCPnrFsWbDorhV36Xlz/L1+Ah2y2wCgimKi
-6IobdyhV303V2xeNqTQi4kE=
-=rxBy
+iD8DBQFIbCZosxfQtHhyRPoRAsSfAJ4h7NqVIegmmIFFZxRL74emEtc5ngCfdEEa
+iXdUCNHT13O1RSDek6LK3Ks=
+=GD9Q
 -----END PGP SIGNATURE-----
