@@ -49,15 +49,17 @@ sub _start_tag {
     my ($tag, $attr, $attrseq, $text) = @_;
 
     if ($self->{rewrite_inline_css_cb}) {
-        if ($tag eq 'link' && $attr->{type} eq 'text/css') {
+        if ($tag eq 'link' and defined $attr->{type} and $attr->{type} eq 'text/css' and defined $attr->{href}) {
             my $content = $self->_import($attr->{href});
             if (defined $content) {
                 $content = $self->_handle_imports($content, $attr->{href});
-                $self->{rewrite_html} .= "\n<style type=\"text/css\">\n<!--\n$content\n-->\n</style>\n";
+                $self->{rewrite_html} .= "\n<style type=\"text/css\"";
+                $self->{rewrite_html} .= " media=\"$attr->{media}\"" if $attr->{media};
+                $self->{rewrite_html} .= ">\n<!--\n$content\n-->\n</style>\n";
                 return;
             }
         }
-        if ($tag eq 'style' && $attr->{type} eq 'text/css') {
+        if ($tag eq 'style' and defined $attr->{type} and $attr->{type} eq 'text/css') {
             $self->{rewrite_look_for_style} = 1;
         }
     }
